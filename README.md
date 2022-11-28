@@ -52,6 +52,9 @@ $ python -m torch.distributed.launch --nproc_per_node=2 --master_port=25911 trai
 ```
 $ python -m torch.distributed.launch --nproc_per_node=1 --master_port=25911 test.py --use_gpu="0" --model_dir="./checkpoints/Rain100L/" --save_path="./results/Rain100L/"
 ```
+## Pretrained Model
+The pre-trained are place it in `./weights/`, and modified the content is just like `train_main_syn_parallel.py --resume=1 `
+
 
 ## Citation
 ```
