@@ -22,8 +22,8 @@ Images shot outdoors may capture rain, which can be troublesome to view the clea
 
 ## Quality Metrics
 ###### All PSNR and SSIM results are computed based on Y channel of YCbCr space.
-* PSNR (Peak Signal-to-Noise Ratio) [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4550695) [[matlab code]](https://www.mathworks.com/help/images/ref/psnr.html) 
-* SSIM (Structural Similarity) [[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1284395) [[matlab code]](http://www.cns.nyu.edu/~lcv/ssim/ssim_index.m) 
+* PSNR (Peak Signal-to-Noise Ratio) *[[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4550695) [[matlab code]](https://www.mathworks.com/help/images/ref/psnr.html)*
+* SSIM (Structural Similarity) *[[paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1284395) [[matlab code]](http://www.cns.nyu.edu/~lcv/ssim/ssim_index.m)*
 
 
 ## Installation
@@ -37,14 +37,12 @@ conda install pytorch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0
 pip install opencv-python tqdm ptflops glog scikit-image tensorboardX torchsummary
 ```
 ## Training
-*taking training on Rain100L (200 training pairs) as an example*:
-
-* Download our selected Rain100L  (including training set), then unzip to ./data.The unzipped file is like:
-
+*taking training on Rain100L (200 training pairs) as an example, then unzip to ./data. the unzipped file is like:</br>
+```
  data_path = r"./data/Rain100L/train/rain/rain-\*.png"
  gt_path =  r"./data/Rain100L/train/norain/norain-\*.png"
-
-Note that if using other datasets, please change the file organization as this.
+```
+Note that if using other datasets, please change the file organization as this.</br>
 
 ### Training </br>
 ```
@@ -54,4 +52,7 @@ $ python -m torch.distributed.launch --nproc_per_node=2 --master_port=25911 trai
 ```
 $ python -m torch.distributed.launch --nproc_per_node=1 --master_port=25911 test.py --use_gpu="0" --model_dir="./checkpoints/Rain100L/" --save_path="./results/Rain100L/"
 ```
+
 ## Citation
+```
+```
