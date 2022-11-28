@@ -18,7 +18,7 @@ Images shot outdoors may capture rain, which can be troublesome to view the clea
 * **Rain1200(DID-Data)**: 12000 training pairs and 1200 test pairs *[[paper](https://arxiv.org/abs/1802.07412)][[dataset](https://github.com/hezhangsprinter/DID-MDN)] (2018 CVPR)*
 
 ### Real-world dataset
-* **SPA-Data**: 638492 training pairs, 1000 testing pairs *[[paper](https://arxiv.org/pdf/1904.01538.pdf)][[dataset](https://stevewongv.github.io/derain-project.html)] (2019 CVPR)*
+* **SPA-Data**: 28500 training pairs, 1000 testing pairs *[[paper](https://arxiv.org/pdf/1904.01538.pdf)][[dataset](https://stevewongv.github.io/derain-project.html)] (2019 CVPR)*
 
 ## Installation
 The implementation is modified from "[RCDNet_simple]([https://github.com/VITA-Group/DeblurGANv2](https://github.com/hongwang01/RCDNet_simple))"
