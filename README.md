@@ -10,7 +10,7 @@ Images shot outdoors may capture rain, which can be troublesome to view the clea
 
 ![Architecture of Partitioned Transformer Block (PTB).](Figures/PTB-1.png)
 
-![Performance of MPT](Figures/Quality and Model size Evaluations-1.png)
+![Performance of MPT](https://github.com/ytpeng-aimlab/Multi-Stage-Partitioned-Transformer-for-Efficient-Image-Deraining/blob/e9d32674d4d5be85e0aebb7c1818feed0fc34927/Figures/Quality%20and%20Model%20size%20Evaluations-1.png)
 
 ## Dataset Descriptions 
 #### Synthetic datasets
@@ -77,14 +77,45 @@ The pre-trained are place it in `./weights/`, and modified the content is just l
 ![Architecture of Partitioned Transformer Block (PTB).](Figures/Quantitative comparison syn-1.png)
 ![Architecture of Partitioned Transformer Block (PTB).](Figures/Quantitative comparison real-1.png)
 ![Architecture of Partitioned Transformer Block (PTB).](Figures/Quality and Model size Evaluations-1.png)
+<details>
+<summary><strong>Deraining quantitative comparison on the synthetic dataset</strong> (click to expand) </summary>
+<img src = "https://github.com/ytpeng-aimlab/Multi-Stage-Partitioned-Transformer-for-Efficient-Image-Deraining/blob/e9d32674d4d5be85e0aebb7c1818feed0fc34927/Figures/Quantitative%20comparison%20syn-1.png"> 
+</details>
 
+<details>
+<summary><strong>Deraining quantitative comparison on the real-world dataset</strong> (click to expand) </summary>
+<img src = "https://github.com/ytpeng-aimlab/Multi-Stage-Partitioned-Transformer-for-Efficient-Image-Deraining/blob/e9d32674d4d5be85e0aebb7c1818feed0fc34927/Figures/Quantitative%20comparison%20real-1.png"> 
+</details>
 
-![Architecture of Partitioned Transformer Block (PTB).](Figures/Rain100L_results.png)
-![Architecture of Partitioned Transformer Block (PTB).](Figures/Rain100H_results.png)
-![Architecture of Partitioned Transformer Block (PTB).](Figures/Rain800_results.png)
-![Architecture of Partitioned Transformer Block (PTB).](Figures/Rain1400_results.png)
-![Architecture of Partitioned Transformer Block (PTB).](Figures/Rain1200_results.png)
-![Architecture of Partitioned Transformer Block (PTB).](Figures/SPA_results.png)
+<details>
+<summary><strong>Image Deraining on Rain100L</strong> (click to expand) </summary>
+<img src = "https://github.com/ytpeng-aimlab/Multi-Stage-Partitioned-Transformer-for-Efficient-Image-Deraining/blob/e9d32674d4d5be85e0aebb7c1818feed0fc34927/Figures/Rain100L_results.png"> 
+</details>
+
+<details>
+<summary><strong>Image Deraining on Rain100H</strong> (click to expand) </summary>
+<img src = "https://github.com/ytpeng-aimlab/Multi-Stage-Partitioned-Transformer-for-Efficient-Image-Deraining/blob/e9d32674d4d5be85e0aebb7c1818feed0fc34927/Figures/Rain100H_results.png"> 
+</details>
+
+<details>
+<summary><strong>Image Deraining on Rain800</strong> (click to expand) </summary>
+<img src = "https://github.com/ytpeng-aimlab/Multi-Stage-Partitioned-Transformer-for-Efficient-Image-Deraining/blob/e9d32674d4d5be85e0aebb7c1818feed0fc34927/Figures/Rain800_results.png"> 
+</details>
+
+<details>
+<summary><strong>Image Deraining on Rain1400</strong> (click to expand) </summary>
+<img src = "https://github.com/ytpeng-aimlab/Multi-Stage-Partitioned-Transformer-for-Efficient-Image-Deraining/blob/e9d32674d4d5be85e0aebb7c1818feed0fc34927/Figures/Rain1400_results.png"> 
+</details>
+
+<details>
+<summary><strong>Image Deraining on Rain1200</strong> (click to expand) </summary>
+<img src = "https://github.com/ytpeng-aimlab/Multi-Stage-Partitioned-Transformer-for-Efficient-Image-Deraining/blob/e9d32674d4d5be85e0aebb7c1818feed0fc34927/Figures/Rain1200_results.png"> 
+</details>
+
+<details>
+<summary><strong>Image Deraining on Real world SPA-Data</strong> (click to expand) </summary>
+<img src = "https://github.com/ytpeng-aimlab/Multi-Stage-Partitioned-Transformer-for-Efficient-Image-Deraining/blob/e9d32674d4d5be85e0aebb7c1818feed0fc34927/Figures/SPA_results.png"> 
+</details>
 
 ## Citation
 ```
