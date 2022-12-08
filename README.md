@@ -5,6 +5,7 @@ Pytorch Implementation of "Multi-Stage Partitioned Transformer for Efficient Ima
 ## Introduction
 Images shot outdoors may capture rain, which can be troublesome to view the clean scene and significantly degrade their visual quality. Since rain scenes vary due to rain's density and wind directions, removing rain streaks from a rainy image is difficult. Thanks to the recent success of transformers in vision tasks, we propose a novel Multi-stage Partitioned Transformer (MPT) specifically for image deraining. MPT separates the attention module and multi-layer perceptron (MLP) to decompose the rain layer and the clean background from a rainy image. It utilizes the proposed global and local rain-aware attention mechanism to estimate the rain layer. In addition, we add atrous convolutions to MLP to aggregate contextualized background features to produce a clean background at multiple stages. MPT is a parameter-economical and computationally efficient deraining model that can effectively remove rain streaks from the input rainy image. Experimental results demonstrate that the proposed MPT performs favorably against state-of-the-art models in image deraining on benchmark datasets.
 
+## Network Architecture of MPT
 ![An architecture overview of the Multi-stage Partitioned Transformer (MPT).](Figures/MPT_overview-1.png)
 
 ![Architecture of Partitioned Transformer Block (PTB).](Figures/PTB-1.png)
@@ -19,6 +20,20 @@ Images shot outdoors may capture rain, which can be troublesome to view the clea
 
 #### Real-world dataset
 * **SPA-Data**: 28500 training pairs, 1000 testing pairs *[[paper](https://arxiv.org/pdf/1904.01538.pdf)][[dataset](https://stevewongv.github.io/derain-project.html)] (2019 CVPR)*
+
+- For example on Rain100L: './data/Rain100L'
+
+```
+./data/Rain100L
++--- train
+|   +--- norain
+|   +--- rain
+|
++--- test
+|   +--- norain
+|   +--- rain
+```
+
 
 ## Quality Metrics
 ###### All PSNR and SSIM results are computed based on Y channel of YCbCr space.
@@ -54,6 +69,8 @@ $ python -m torch.distributed.launch --nproc_per_node=1 --master_port=25911 test
 ```
 ## Pretrained Model
 The pre-trained are place it in `./weights/`, and modified the content is just like `train_main_syn_parallel.py --resume=1 `
+
+## Deraining Results
 
 
 ## Citation
