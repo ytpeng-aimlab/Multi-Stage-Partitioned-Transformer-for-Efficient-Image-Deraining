@@ -10,6 +10,8 @@ Images shot outdoors may capture rain, which can be troublesome to view the clea
 
 ![Architecture of Partitioned Transformer Block (PTB).](Figures/PTB-1.png)
 
+![Performance of MPT](Figures/Quality and Model size Evaluations-1.png)
+
 ## Dataset Descriptions 
 #### Synthetic datasets
 * **Rain100L**: 200 training pairs and 100 test pairs *[[paper](http://openaccess.thecvf.com/content_cvpr_2017/papers/Yang_Deep_Joint_Rain_CVPR_2017_paper.pdf)][[dataset](http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html)](2017 CVPR)*
@@ -72,6 +74,17 @@ The pre-trained are place it in `./weights/`, and modified the content is just l
 
 ## Deraining Results
 
+![Architecture of Partitioned Transformer Block (PTB).](Figures/Quantitative comparison syn-1.png)
+![Architecture of Partitioned Transformer Block (PTB).](Figures/Quantitative comparison real-1.png)
+![Architecture of Partitioned Transformer Block (PTB).](Figures/Quality and Model size Evaluations-1.png)
+
+
+![Architecture of Partitioned Transformer Block (PTB).](Figures/Rain100L_results.png)
+![Architecture of Partitioned Transformer Block (PTB).](Figures/Rain100H_results.png)
+![Architecture of Partitioned Transformer Block (PTB).](Figures/Rain800_results.png)
+![Architecture of Partitioned Transformer Block (PTB).](Figures/Rain1400_results.png)
+![Architecture of Partitioned Transformer Block (PTB).](Figures/Rain1200_results.png)
+![Architecture of Partitioned Transformer Block (PTB).](Figures/SPA_results.png)
 
 ## Citation
 ```
